@@ -33,7 +33,7 @@ export default class Information extends React.Component {
                   <div className={information.word}>
                     <div className={information.topic}>
                       刚刚成都城镇垃圾分类标准发布
-                      </div>
+                    </div>
                     <div className={information.mainbody}>
                       <a href="/massage" className={information.mainbody1}>根据“垃圾围城”，2020年可能要出的这些大招</a>
                       <div className={information.time}>12-30</div>

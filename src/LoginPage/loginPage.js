@@ -8,27 +8,37 @@ var loginPage = require("./loginPage.css")
 export default class LoginPage extends React.Component {
     constructor(props){
         super(props);
-        this.state={}
+        this.state={
+            username:'',
+            password:'',
+        }
+        this.user=this.user.bind(this);
+        this.pass=this.pass.bind(this);
+        this.login=this.login.bind(this)
     }
-    changeValue=(e)=>{
+    user=(e)=>{
         this.setState({
-            [e.target.name]:e.target.value
-        })      
+            username:e.target.value
+        })
     }
-    upload=()=>{
+    pass=(e)=>{
+        this.setState({
+            password:e.target.value
+        })
+    }
+    login=()=>{
         var data={
-            "number":this.state.number,
+            "username":this.state.username,
             "password":this.state.password,
         }
-        //axios
-        Axios.post({
-            url:"/user/register",
+      
+        Axios.post("/login/logins",{
             data:JSON.stringify(data)
         }).then(result=>{
             if(result.state==2){
-                message.info("账号或密码错误")
+                message.warn("账号或密码错误")
             }else if(result.state==1){
-                message.info("登录成功")
+                message.success("登录成功")
             }
         })
     }
@@ -48,17 +58,15 @@ export default class LoginPage extends React.Component {
                     <div className={loginPage.center}>
                         <div className={loginPage.text3}>
                             账号：
-                        <Input size="small" placeholder="电话号码/用户名" className={loginPage.name} name="number" value={this.state.number} onChange={e=>this.changeValue(e)}></Input>
+                        <Input size="small" placeholder="用户名" className={loginPage.name} name="number" onChange={this.user}></Input>
                         </div>
                         <div className={loginPage.text4}>
                             密码：
-                        <Input.Password placeholder="请输入密码" size="small" className={loginPage.Password} name="password" value={this.state.password} onChange={e=>this.changeValue(e)}/>
+                        <Input.Password placeholder="请输入密码" size="small" className={loginPage.Password} name="password" onChange={this.user}/>
                             <div className={loginPage.text5}><br></br><Link to="/retrievePage" className={loginPage.forget}>忘记密码？</Link></div>
                         </div>
                         <div className={loginPage.registe}>
-                            <Link to="/homePage">
-                                <Button type="primary" shape="round" >登录</Button>
-                            </Link>
+                                <Button type="primary" shape="round" onClick={this.login} >登录</Button>
                         </div>
                         <div className={loginPage.loginway}>
                                 <Divider>其他方式登录</Divider>

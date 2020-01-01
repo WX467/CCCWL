@@ -8,28 +8,49 @@ var registerPage = require("./registerPage.css")
 export default class RegisterPage extends React.Component {
     constructor(props){
         super(props);
-        this.state={}
+        this.state={
+            username:'',
+            password:'',
+            name:'',
+            age:18,
+            sex:'男',      
+        }
+        this.user=this.user.bind(this);
+        this.pass=this.pass.bind(this);
+        this.name=this.name.bind(this);
+        this.upload=this.upload.bind(this)
     }
-    changeValue=(e)=>{
+    user=(e)=>{
         this.setState({
-            [e.target.name]:e.target.value
-        })      
+            username:e.target.value
+        })
+    }
+    pass=(e)=>{
+        this.setState({
+            password:e.target.value
+        })
+    }
+    name=(e)=>{
+        this.setState({
+            name:e.target.value
+        })
     }
     upload=()=>{
         var data={
             "username":this.state.username,
             "password":this.state.password,
-            "telnumber":this.state.telnumber,
+            "name":this.state.telnumber,
+            "age":this.state.telnumber,
+            "sex":this.state.tenumber,
         }
         //axios
-        Axios.post({
-            url:"/user/register",
+        Axios.post("/user/register",{
             data:JSON.stringify(data)
         }).then(result=>{
             if(result.state==2){
-                message.info("用户名已存在")
+                message.error("用户名已存在")
             }else if(result.state==1){
-                message.info("注册成功")
+                message.success("注册成功")
             }
         })
     }
@@ -49,20 +70,24 @@ export default class RegisterPage extends React.Component {
                             中国大陆+86：
                         <Input size="small" className={registerPage.number}></Input>
                         </div> */}
-                        <div className={registerPage.texta} name="username" value={this.state.username} onChange={e=>this.changeValue(e)}>
+                        <div className={registerPage.texta} 
+                        name="username" 
+                        >
                             用户名：
-                        <Input size="small" className={registerPage.number}></Input>
+                        <Input size="small" className={registerPage.number} onChange={this.user}></Input>
                         </div>
                         <div className={registerPage.text4}>
                             设置密码：
-                        <Input.Password placeholder="请输入密码" size="small" className={registerPage.Password}name="password" value={this.state.password} onChange={e=>this.changeValue(e)} />
+                        <Input.Password placeholder="请输入密码" size="small" 
+                        className={registerPage.Password}name="password" 
+                        onChange={this.pass} />
                         </div>
                         <div className={registerPage.text3}>
-                            手机号码：
-                        <Input size="small" className={registerPage.number}></Input>
+                            名字：
+                        <Input size="small" className={registerPage.number} onChange={this.name}></Input>
                         </div>
                         <div className={registerPage.registe}>
-                            <Button type="primary" shape="round" onClick={this.upload}><Link to="initial">注册</Link></Button>
+                            <Button type="primary" shape="round" onClick={this.upload}>注册</Button>
                         </div>
                         <div className={registerPage.text6}>
                             已有账号？

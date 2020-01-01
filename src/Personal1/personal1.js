@@ -1,11 +1,50 @@
 import React from 'react';
 import{Link} from 'react-router-dom';
-import{Button,Icon} from 'antd';
+import{Button,Icon,Input,message} from 'antd';
 import{Avatar} from 'antd';
+import Axios from 'axios';
 
 
 var Personal1Css = require('../Personal1/personal1.css');
 export default class Personal1 extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            username:'',
+            password:'',
+        }
+        this.user=this.user.bind(this);
+        this.pass=this.pass.bind(this);
+        this.change=this.change.bind(this)
+    }
+    user=(e)=>{
+        this.setState({
+            username:e.target.value
+        })
+    }
+    pass=(e)=>{
+        this.setState({
+            password:e.target.value
+        })
+    }
+    change=()=>{
+        var data={
+            "username":this.state.username,
+            "password":this.state.password,
+        }
+      
+        Axios.post("/alter/alters",{
+            data:JSON.stringify(data)
+        }).then(result=>{
+            if(result.state==-1){
+                message.warn("待修改密码为空")
+            }else if(result.state==1){
+                message.success("密码修改成功")
+            }else{
+                message.error('密码修改失败')
+            }
+        })
+    }
     render(){
         return(
             <div className={Personal1Css.Personal1}>
@@ -42,6 +81,9 @@ export default class Personal1 extends React.Component{
                             <p>邮箱：XXXXXXXXXXXXXXXX</p>
                             <p>联系方式：XXXXXXXXXXXXX</p>
                         </div>
+                        <Input addonBefore='账户：' size="small" placeholder="用户名" name="number" onChange={this.user}></Input> 
+                        <Input.Password addonBefore='密码：' placeholder="请输入密码" size="small"  name="password" onChange={this.user}/>
+                        <Button type="primary" shape="round" onClick={this.change} >修改密码</Button>
                     </div>
                 </div>
             </div>

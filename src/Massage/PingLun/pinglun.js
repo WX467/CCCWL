@@ -1,6 +1,7 @@
 import React from 'react';
-import { Comment, Avatar, Form, Button, List, Input } from 'antd';
+import { Comment, Avatar, Form, Button, List, Input,message } from 'antd';
 import moment from 'moment';
+import Axios from 'axios';
 
 const { TextArea } = Input;
 
@@ -19,7 +20,7 @@ const Editor = ({ onChange, onSubmit, submitting, value }) => (
       <TextArea rows={4} onChange={onChange} value={value} />
     </Form.Item>
     <Form.Item>
-      <Button >点击评论</Button>
+      <Button onClick={onSubmit}>点击评论</Button>
     </Form.Item>
   </div>
 );
@@ -35,7 +36,7 @@ export default class Pinglun extends React.Component {
     if (!this.state.value) {
       return;
     }
-
+    console.log(this.state.value)
     this.setState({
       submitting: true,
     });
@@ -54,6 +55,22 @@ export default class Pinglun extends React.Component {
         ],
       });
     }, 1000);
+    let data = {
+      "": this.state.value,
+      
+    }
+
+    Axios.post("/user/communicate", {
+      data: JSON.stringify(data)
+    }).then(result => {
+      if (result.state == -1) {
+        message.warn("待修改密码为空")
+      } else if (result.state == 1) {
+        message.success("密码修改成功")
+      } else {
+        message.error('密码修改失败')
+      }
+    })
   };
 
   handleChange = e => {
