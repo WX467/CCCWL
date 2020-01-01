@@ -8,7 +8,6 @@ var img1 = require('../Img/194.jpg')
 var img2 = require('../Img/196.jpg')
 var img3 = require('../Img/197.jpg')
 var img4 = require('../Img/198.jpg')
-
 export default class Information extends React.Component {
   render(){
     return(
