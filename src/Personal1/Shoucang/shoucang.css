@@ -1,0 +1,96 @@
+.shoucang{
+    width: 1220px;
+    height: 590px;
+    margin-left: 7.5%;
+    margin-top: 4%;
+}
+.top{
+    width: 1218px;
+    height: 40px;
+    background-color: rgb(226, 223, 223);
+}
+.top Button{
+    height: 39px;
+}
+.top p{
+    margin-top: -30px;
+    float: right;
+}
+.sc p{
+    color: rgb(126, 209, 241);
+}
+.bj p{
+    color: white;
+}
+.left{
+    width: 250px;
+    height: 549px;
+}
+.menu1{
+    width: 249px;
+    height: 180px;
+    background-color: rgb(231, 231, 231);
+}
+.icon{
+    margin-left: 100px;
+}
+.icon p{
+    margin-left:-25px;
+    margin-top: 20PX;
+}
+.menu2{
+    background-image: url("../../Img/120.jpg");
+    background-size: 210px 300px;
+    width: 249px;
+    height: 367px;
+}
+.right{
+    overflow-y:auto; height:549px;
+    background-color: rgb(231, 231, 231);
+    width: 968px;
+    height: 549px;
+    margin-left: 250px;
+    margin-top: -551px;
+}
+
+.shoucang1{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+}
+.shoucang2{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.shoucang3{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.shoucang4{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.shoucang5{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.shoucang6{
+    width: 868px;
+    height: 110px;
+    border: white 5px solid;
+    margin-left: 50px;
+    margin-top: 30px;
+}

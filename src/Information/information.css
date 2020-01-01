@@ -1,0 +1,132 @@
+.all{
+    width: 1400px;
+    height: 550px;
+    margin: 50px auto;
+    position: relative;
+}
+.left{
+    width: 1000px;
+    height: 550px;
+}
+.slide{
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-top: 2px;
+    z-index: 1;
+}
+.word{
+    width: 550px;
+    height: 400px;
+    margin-left: 425px; 
+}
+.topic{
+    margin-top: 15%;
+    font-size: 25px;
+    font-style: inherit;
+}
+.mainbody{
+    margin-top: 5%;
+    font-size: 16px;
+    font-style: inherit;
+}
+.mainbody1{
+    color: rgb(87, 85, 85);
+}
+.time{
+    font-size: 16px;
+    margin-left: 80%;
+    margin-top: -25px;
+}
+.one{
+    margin-top: 35px;
+    height: 80px;
+    width: 400px;
+}
+.international{
+    font-size: 25px;
+    font-style: inherit;
+    margin-top: 15px;
+    width: 470px;
+    margin-left: 1%;
+}
+.tubiao{
+    font-size: 16px;
+    font-style: normal;
+    margin-left: 420px;
+    margin-top: -25px;
+}
+.two{
+    margin-top: -80px;
+    height: 480px;
+    width: 560px;
+    margin-left: 420px;
+}
+.country{
+    font-size: 25px;
+    font-style: inherit;
+    margin-top: -25px;
+    margin-left: 80px;
+}
+.tubiao01{
+    font-size: 16px;
+    font-style: normal;
+    margin-left: 395px;
+    margin-top: -25px;
+}
+.wordpage{
+    font-size: 16px;
+    margin-left: 15%;
+    width: 490px;
+}
+.noname{
+    width: 490px;
+    height: 420px;
+    margin-top: -390px;
+    font-size: 16px;
+    margin-left: 0.5%;
+}
+.time1{
+    margin-top: -25px;
+    margin-left: 85%;
+    font-size: 18px;
+}
+.right{
+    width: 400px;
+    height: 400px;
+    margin-left:1000px;
+    margin-top: -540px;
+}
+.line{
+    margin-top: -200px;
+}
+.topic1{
+    font-size:20px;
+    font-style: inherit;
+    margin-left: 15px;
+}
+.mainbody02{
+    font-size: 18px;
+}
+.a{
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(238, 18, 18);
+}
+.b{
+    font-size: 18px;
+    margin-top: -30px;
+    margin-left:25px ;
+}
+.number{
+    font-size: 16px;
+    margin-top: -25px;
+    margin-left: 365px;
+}
+.c{
+    font-size: 25px;
+    color: black;
+}
+.end{
+    margin-top: 25%;
+}

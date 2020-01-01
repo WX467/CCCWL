@@ -1,0 +1,56 @@
+.all{
+    height: 750px;
+    background-image:url("../Img/176.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.register{
+    height: 400px;
+    width: 400px;
+    margin-top: 220px;
+    margin-left: -250px;
+    /* border-width: 1.5px;
+    border-color:rgba(75, 19, 165, 0.548);
+    border-style: ridge; */
+}
+.text1{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(128, 226, 30);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.text2{
+    font-size: 18px;
+    color: rgb(29, 170, 104);
+    text-align: center;  
+    margin-top: 20px;
+}
+.texta{
+    margin-left: 19.5%;
+    margin-top: 30px;
+}
+.text3{
+    text-align: center;
+    margin-top: 30px;
+}
+.text4{
+    text-align: center;
+    margin-top: 30px;
+}
+.registe{
+    text-align: center;
+    margin-top: 30px;
+}
+.text6{
+    margin-left: 160px;
+    margin-top: 30px;
+}
+.Password{
+    width: 200px;
+}
+.number{
+    width: 200px;
+}

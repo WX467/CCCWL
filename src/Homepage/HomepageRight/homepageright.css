@@ -1,0 +1,82 @@
+.div{
+    background-color: white;
+    height: 1800px;
+    width:950px;
+    margin-left: 1%;
+    margin-top: 7%;
+
+}
+.hhh{
+    width: 950px;
+    margin-top: 1.1%;
+}
+.hh{
+    margin-top: 1%;
+}
+.h{
+    width: 950px;
+    height: 350px;
+}
+.people{
+    margin-left: 1%;
+}
+.massage{
+    color: rgb(63, 38, 173);
+    margin-left: 2%;
+}
+.m{
+    margin-top: 2%;
+}
+.massage1{
+    color: rgb(77, 78, 78);
+    font-size: 1.1em;
+    margin-left: 4%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mainbody{
+    position: absolute;
+    margin-left: 4%;
+    width: 380px;
+    padding-top: 4%;
+}
+.mainbody1{
+    color: rgb(77, 78, 78);
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h1{
+    width: 150px;
+    height: 120px;
+    margin-top: 6%;
+    cursor: pointer;/*让鼠标显示小手*/ 
+    transition:1s; /*过渡时间(缓慢放大时间)*/ 
+}
+.h2{
+    width: 150px;
+    height: 120px;
+    margin-left: 8%;
+    margin-top: 5%;
+    cursor: pointer;/*让鼠标显示小手*/ 
+    transition:1s; /*过渡时间(缓慢放大时间)*/ 
+}
+.i{
+    padding-top: 8%;
+}
+.img{
+    margin-left: 50%;
+    width:450px;
+    height: 400px; 
+    overflow: hidden; /*超出部分隐藏*/ 
+}
+.h1:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 
+.h11:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 
+.h2:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 
+.h21:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 

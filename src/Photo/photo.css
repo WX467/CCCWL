@@ -1,0 +1,31 @@
+.div{ 
+    width:950px;
+    height: 210px; 
+    overflow: hidden; /*超出部分隐藏*/ 
+} 
+.img{
+    cursor: pointer;/*让鼠标显示小手*/ 
+    transition:1s; /*过渡时间(缓慢放大时间)*/ 
+    margin-left: 5%;
+    -webkit-filter: blur(0.5px); /*图片虚化*/
+    -moz-filter: blur(0.5px); 
+    -o-filter: blur(0.5px); 
+    -ms-filter: blur(0.5px); 
+    filter: blur(0.5px);
+}
+.img1{
+    cursor: pointer;/*让鼠标显示小手*/ 
+    transition:1s; /*过渡时间(缓慢放大时间)*/ 
+    margin-left: 3%;
+    -webkit-filter: blur(0.5px); /*图片虚化*/
+    -moz-filter: blur(0.5px); 
+    -o-filter: blur(0.5px); 
+    -ms-filter: blur(0.5px); 
+    filter: blur(0.5px);
+}
+.img:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 
+.img1:hover{ 
+    transform: scale(1.1); /*放大*/ 
+} 

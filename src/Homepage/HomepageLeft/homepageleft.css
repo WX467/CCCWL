@@ -1,0 +1,89 @@
+.all{
+    margin-top: 17%;
+}
+.company{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(178, 181, 184);
+}
+.n{
+    margin-left: 10.6%;
+    background-color: white;
+    margin-top: 2.5%;
+    height: 200px;
+    width: 370px;
+}
+.h{
+    position: absolute;
+    width: 50px;
+    margin-left: 8%;
+    margin-top: 6%;
+}
+.m{
+    margin-left: 30%;
+    margin-top: 2%;
+}
+.mm{
+    width: 60px;
+}
+.nn{
+    margin-left: 8%;
+    margin-top: 11%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.mmm{
+    background-color: white;
+    margin-left: 10.6%;
+    width: 370px;
+    margin-top: 2.5%;
+    height: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.nnn{
+    margin-left: 4.5%;
+    color: rgb(58, 58, 59);
+}
+.clike{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    margin-left: 4.5%;
+}
+.a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    margin-left: 4.5%;
+    color:rgb(135, 138, 141);
+}
+.location{
+    margin-left: 4.5%;
+    color: rgb(35, 35, 37);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.city{
+    margin-left: 4.5%;
+    margin-top: 5%;
+    color: rgb(56, 56, 61);
+}
+.city1{
+    color:rgb(117, 119, 121);
+    margin-top: 1%;
+}
+.nm{
+    margin-left: 10.6%;
+    background-color: white;
+    margin-top: 2.5%;
+    height: 270px;
+    width: 370px;
+}
+.img{
+    width: 120px;
+    margin-left: 2%;
+    margin-top: 3%;
+
+}
+.scan{
+    margin-left: 4.5%;
+    margin-top: 2%;
+}

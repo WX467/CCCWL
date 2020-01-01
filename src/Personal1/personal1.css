@@ -1,0 +1,64 @@
+.Personal1{
+    width: 1410px;
+    height: 690px;
+    margin-left: 10px;
+}
+.top{
+    width: 1410px;
+    height: 40px;
+    background-color: rgb(226, 223, 223);
+}
+.topa{
+    color: rgb(77, 143, 56);
+}
+.top Button{
+    height: 39px;
+}
+.top p{
+    float:right;
+    color: rgb(77, 143, 56);
+    margin-top: 10px;
+}
+.left{
+    width: 350px;
+    height: 600px;
+}
+.menu1{
+    width: 350px;
+    height: 180px;
+    background-color: rgb(231, 231, 231);
+}
+.icon{
+    padding-left: 100px;
+    padding-top: 6%;
+    background-image: url("../Img/120.jpg");
+    background-size: 350px 600px;
+    width: 350px;
+    height: 600px;
+}
+.icon p{
+    margin-left:-25px;
+    margin-top: 20PX;
+}
+.right{
+    background-color: rgb(231, 231, 231);
+    width: 1160px;
+    height: 600px;
+    margin-left: 350px;
+    margin-top: -600px;
+}
+.message{
+    width: 400px;
+    height: 480px;
+    border: 1px rgb(231, 231, 231) solid;
+    margin-left: 1%;
+}
+.touxiang{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.wenzi{
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 40px;
+}

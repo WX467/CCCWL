@@ -1,0 +1,68 @@
+.all{
+    height: 750px;
+    background-image: url("../Img/180.jpg");
+}
+.retrieve {
+    height: 450px;
+    width: 400px;
+    margin-top: 140px;
+    /* border-width: 2px;
+    border-color: black;
+    border-style: ridge; */
+}
+
+.text1 {
+    text-align: left;
+    font-size: 30px;
+    color: rgb(20, 152, 212);
+    margin-left: -565px;
+    margin-top: 15px;
+}
+
+.text2 {
+    font-size: 18px;
+    color: rgb(32, 112, 218);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.number{
+    width: 200px;
+}
+
+.text3{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: 30px;
+}
+.text5{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text6{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;    
+    margin-left: -15px;
+    margin-top: 30px;
+}
+.cancel{
+    margin-left: 40px;
+}
+
+.confirm{
+    margin-left: 40px;
+}
+
+.button{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.Password{
+    width: 200px;
+}
