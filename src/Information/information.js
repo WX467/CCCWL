@@ -62,7 +62,8 @@ export default class Information extends React.Component {
                   <div className={information.two}>
                   <div className={information.country}>国内动态
                   <div className={information.tubiao01}>更多<Icon type="right" /></div></div><Divider></Divider>
-                  <div className={information.wordpage}><Icon type="sound" />北京拟将垃圾分类修改为义务性条款
+                  <div className={information.wordpage}><Icon type="sound" />
+                  北京拟将垃圾分类修改为义务性条款
                   <div className={information.time}>12-30</div>
                   <Icon type="sound" />多个城市将垃圾分类纳入物业管理
                   <div className={information.time}>12-30</div>
@@ -76,7 +77,7 @@ export default class Information extends React.Component {
                   <div className={information.time}>12-30</div>
                   <Icon type="sound" />南京全面推进单位垃圾分类
                   <div className={information.time}>12-30</div>
-                  伴<Icon type="sound" />垃圾分类即将实行！看看能源金贸区的小伙怎！
+                  <Icon type="sound" />垃圾分类即将实行！看看能源金贸区的小伙怎么办
                   <div className={information.time}>12-30</div>
                   </div>
                   </div>
